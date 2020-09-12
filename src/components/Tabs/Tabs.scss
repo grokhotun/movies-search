@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.tabs {
+    display: flex;
+    width: 100%;
+    @media (max-width:$maxwidth3){
+        flex-direction: column;
+    }
+    &__btn {
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #DFE5EC;
+        padding: 15px 60px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #000;
+        &.is-active {
+            background: #d7d6d9;
+            border: 1px solid #d7d6d9;
+        }
+    }
+}

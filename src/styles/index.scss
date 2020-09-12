@@ -1,0 +1,86 @@
+@import "variables.scss";
+@import "null.scss";
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	background-color: #f7f7f7;
+}
+
+.container {
+	max-width: $maxwidth + px;
+	margin: 0 auto;
+	width: 100%;
+	@media (max-width: $maxwidth1) {
+		max-width: 970px;
+	}
+	@media (max-width: $maxwidth2) {
+		max-width: 750px;
+	}
+	@media (max-width: $maxwidth3) {
+		max-width: none;
+		padding: 0 10px;
+	}
+}
+
+.content {
+	padding: 100px 0;
+	& > * {
+		&:not(:last-child) {
+			margin: 0px 0px 20px 0px;
+		}
+	}
+	&__row {
+	}
+}
+
+.tags {
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		& > * {
+			&:not(:last-child) {
+				margin: 0px 10px 10px 0px;
+			}
+		}
+	}
+}
+
+.tags-filter {
+	&__list {
+		& > * {
+			margin: 5px;
+		}
+	}
+}
+
+.tag-bubble {
+	cursor: pointer;
+	display: inline-block;
+	border-radius: 10px;
+	color: #000;
+	padding: 10px;
+	background-color: #d7d6d9;
+	transition: .3s ease;
+		&:hover{
+			transform: scale(1.1);
+		}
+	&--deletable {
+		&:after {
+			content:'x';
+			padding: 0px 0px 0px 20px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+.empty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__text {
+		font-size: 24px;
+	}
+}
