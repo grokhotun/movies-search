@@ -1,6 +1,6 @@
 ## Movies Search App - веб-приложение поиска фильмов
 
-Тестовое задание в Казанскую компанию на позицию middle frontend developer.
+Тестовое задание в казанскую компанию на позицию middle frontend developer.
 
 ## Условия:
 - Использовать React & Redux
